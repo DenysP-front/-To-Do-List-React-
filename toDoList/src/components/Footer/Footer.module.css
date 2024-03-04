@@ -1,0 +1,29 @@
+:root {
+  --gray-opacity: rgba(255, 255, 255, 0.3);
+  --white: #fff;
+  --black: #000;
+}
+
+.footer {
+  background-color: var(--gray-opacity);
+  padding: clamp(10px, calc((100vw - 360px) * 10 / 1240 + 10px), 30px);
+  border-radius: 20px;
+}
+.container {
+  display: grid;
+}
+
+.input {
+  background-color: var(--white);
+  width: 80%;
+  color: #000;
+  padding: clamp(10px, calc((100vw - 360px) * 10 / 1240 + 10px), 30px);
+  font-size: clamp(1rem, calc(0.875rem + 0.63vw), 1.5rem);
+  border-radius: 20px;
+}
+
+.input::placeholder {
+  font-weight: 600;
+  color: var(--black);
+  opacity: 0.3;
+}
